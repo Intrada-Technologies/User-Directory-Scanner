@@ -3,8 +3,13 @@ use std::fs;
 use std::io::Write;
 
 fn main() {
+
+
+
+
+
     // assign path "C:\\tmp\\UserFileSizes.csv" to a variable
-    let result_path = "C:\\tmp\\UserFileSizes.csv";
+    let result_path = "C:\\temp\\UserFileSizes.csv";
 
     if std::path::Path::new(result_path).exists() {
         std::fs::remove_file(result_path).unwrap();
